@@ -1,0 +1,17 @@
+<% include header %>
+<br><br><br><br>
+      <div class="container">
+      <div class="jumbotron">
+      <h2>Editar operação</h2>
+      <br>
+      <hr>
+      <form method="POST">
+        Descrição: <input type="text" class="form-control" name="descricao" value="<%= operacao.descricao %>"><br>
+        Valor: <input type="text" class="form-control" name="valor" value="<%= operacao.valor %>"><br>
+        <hr>
+        <button class="btn btn-primary"type="submit">Salvar</button>
+      </form>
+      </div>
+      </div>
+      <br><br><br>
+<% include footer %>

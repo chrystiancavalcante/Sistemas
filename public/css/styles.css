@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+.header{
+  background: grey;
+  padding: 20px; 
+  text-align: ;
+}
+.content{
+  background-image: ;
+}
+.resultado{
+  width: 300px;
+  margin: 0 auto;
+  background: yellow;
+  text-align: center;
+  padding: 15px;
+}
+.jumbotron{
+	text-align:;
+	background: white;
+}
+
+h2, h3{
+	     color: #55c664;
+      	text-shadow: 1px 1px
+      	             0px #000;
+      	text-align: center;
+      	font-weight: bold;
+      	margin-right: auto;
+      	margin-left: auto;
+}
+
+h4{
+	     color: #fdf1cd;
+      	text-shadow: 1px 1px
+      	             0px #000;
+      	text-align: center;
+      	font-size: 30px;
+      	font-weight: bold;
+      	margin-right: auto;
+      	margin-left: auto;
+      	
+      	}
+      	
+h1{
+	    font-size: 25px;
+     	color: red;
+	    text-shadow: 1px 1px
+      	             0px #000;
+      	text-align: center;
+      	font-weight: bold;
+      	margin-right: auto;
+      	margin-left: auto;
+}
+
+footer{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	
+}

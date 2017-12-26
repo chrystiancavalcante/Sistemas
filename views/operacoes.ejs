@@ -1,0 +1,44 @@
+<% include header %>
+<br><br><br>
+<div class="container">
+      <h2>Resumo</h2>
+      <br>
+      <p>Filtrar por: 
+        <a href="/operacoes">Todos</a> |
+        <a href="/operacoes?tipo=entradas">Entradas</a> |
+        <a href="/operacoes?tipo=saidas">Saídas</a>
+      </p>
+      <div class="col-md-12">
+         <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Subtotal</th>
+                <th>Excluir</th>
+                <th>Alterar</th>
+              </tr>
+            <% operacoes.forEach((operacao) => { %>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#</td>
+                <td><%=operacao.descricao %></td>
+                <td>R$ <%=operacao.valor %></td>
+                <td>Saldo: R$ <%= operacao.sub %></td>
+                <td><a href="/operacoes/delete/<%= operacao._id %>">Excluir</a></td>
+                <td><a href="/operacoes/edit/<%= operacao._id %>">Alterar</a></td>
+              </tr>
+            </tbody>
+          <% }) %>
+          </table>
+        </div>
+      </div>
+      
+      <br>
+  
+      </div>
+      <br>
+      <br>
+<% include footer %>

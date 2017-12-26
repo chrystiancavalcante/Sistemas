@@ -1,0 +1,208 @@
+
+
+      .jumbotron {
+     	midth: 600 px;
+     	background-color: #FFFFFF;
+      	text-align: ;
+      	margin-top: 30 px;
+      	margin-right: auto;
+      	margin-left: auto;
+      }
+      .jumbotron-login {
+     	midth: 600 px;
+     	background-color:;
+      	text-align: ;
+      	margin-top: 30 px;
+      	margin-right: auto;
+      	margin-left: auto;
+      	}
+      	.placeholder{
+      	text-align: left;
+      	}
+      table {
+      	margin-top: 20 px;
+      }
+      form-control {
+      	margin-botton: 5 px;
+      }
+      selecionado {
+      	background-color: yellow;
+      }
+      negrito{
+      	font-weight: bold;
+      }
+      h1-style:{
+      	font-size: 24 px;
+      	text-color: yellow;
+      	text-align: center;
+      }
+      h1, h2, h3{
+      	color: #F5DEB3;
+      	text-shadow: 1px 1px
+      	             0px #000;
+      	text-align: center;
+      	font-weight: bold;
+      	margin-right: auto;
+      	margin-left: auto;
+      }
+      h4{
+      	text-align: center;
+      }
+      .btn-circle.btn-xl {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      border-radius: 35px;
+      font-size: 24px;
+      line-height: 1.33;
+      margin-right:auto;
+      	margin-left: auto;
+      
+}
+
+      .btn-circle {
+      width: 30px;
+      height: 30px;
+      padding: 6px 0px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.42857;
+}
+      .navbar{
+      	background-color: ;
+      	border-radius: 0 px;
+      }
+      .btn.btn-volume{ 
+      -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 0px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 3px rgba(0,0,0,.4); -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 3px rgba(0,0,0,.4); box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 3px rgba(0,0,0,.4); text-shadow:none; 
+      
+      } 
+      .btn.btn-volume:hover
+      { 
+      -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 0px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 6px rgba(0,0,0,.8); -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 6px rgba(0,0,0,.8); box-shadow: inset 0 0 2px rgba(0,0,0,.5), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.5), 0 1px 6px rgba(0,0,0,.8);
+       }
+
+.hoverzoom {
+
+	position: relative;
+
+    width: 350px;
+
+    overflow: hidden;
+
+}
+
+.hoverzoom > img {
+
+   width: 100%; 
+
+	border-radius: 2px;
+
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+}
+
+.hoverzoom:hover > img {
+
+	-webkit-transform: scale(1.5);
+
+	   -moz-transform: scale(1.5);
+
+	    -ms-transform: scale(1.5);
+
+	     -o-transform: scale(1.5);
+
+	        transform: scale(1.5);
+
+}
+
+.hoverzoom .retina{
+
+	position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    top: 0;
+
+    left: 0;
+
+    opacity: 0;    
+
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+
+    border-radius: 2px;
+
+    text-align: center;
+
+    padding: 30px;
+
+ 
+
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+
+}
+
+.hoverzoom:hover .retina {
+
+    opacity: 1;
+
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+
+    
+
+}
+
+.hoverzoom .retina p {
+
+	color: #fff;
+
+}
+
+.hoverzoom .retina a {
+
+	display: block;
+
+	width: 150px;
+
+	background: #6fc5e9;
+
+	border: 1px solid #59afd4;
+
+	border-radius: 4px;
+
+	color: #fff;
+
+	text-decoration: none;
+
+	text-align: center;
+
+	padding: 10px 15px;
+
+	margin: 16px auto 0;
+
+}
+
+
+
+       
+       
+       
+      

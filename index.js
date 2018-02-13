@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const porta = (process.env.PORT || 3001)
+const porta = 3001
 app.listen(porta)
 
 const bodyParser = require('body-parser')

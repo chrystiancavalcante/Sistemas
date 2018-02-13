@@ -1,7 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3001
-
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -185,6 +183,8 @@ MongoClient.connect(mongoUri, (err, db) => {
     return
   }else{
     app.db = db
-    app.listen(port, () => console.log('Server running...port 3001'))
+    app.listen( process.env.PORT || 3001, err => {
+      console.log('finance server running 3001...')
+      })
   }
 })

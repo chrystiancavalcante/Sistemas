@@ -1,13 +1,14 @@
 const express = require('express')
 const app = express()
+const MongoClient = require('mongodb').MongoClient
 const porta = process.env.PORT || 3001
 app.listen(porta)
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const MongoClient = require('mongodb').MongoClient
-const mongoUri = 'mongodb://heroku_g46jqsqb:39n15089ajjs2860s6i3idqeq0@ds115436.mlab.com:15436/heroku_g46jqsqb' 
+
+const mongoUri = 'mongodb://heroku_qwxmkkr5:apg4qf77pcvhlqglqbfuja67gm@ds141657.mlab.com:41657/heroku_qwxmkkr5' 
                                                                                                                                                  
 
 app.use(express.static('public'))

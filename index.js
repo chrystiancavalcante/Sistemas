@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const porta = process.env.PORT || 8080
+const porta = process.env.PORT || 3001
 app.listen(porta)
 
 const bodyParser = require('body-parser')
@@ -185,6 +185,6 @@ MongoClient.connect(mongoUri, (err, db) => {
     return
   }else{
     app.db = db
-    app.listen(port, () => console.log('Server running...port 8080'))
+    app.listen(port, () => console.log('Server running...port 3001'))
   }
 })

@@ -17,7 +17,7 @@
                 <th>Valor</th>
                 <th>Subtotal</th>
                 <th>Excluir</th>
-                <th>Alterar</th>
+               
               </tr>
             <% operacoes.forEach((operacao) => { %>
             </thead>
@@ -28,7 +28,7 @@
                 <td><%=(operacao.valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></td>
                 <td>Saldo: <%= (operacao.sub).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></td>
                 <td><a href="/operacoes/delete/<%= operacao._id %>">Excluir</a></td>
-                <td><a href="/operacoes/edit/<%= operacao._id %>">Alterar</a></td>
+                
               </tr>
             </tbody>
           <% }) %>

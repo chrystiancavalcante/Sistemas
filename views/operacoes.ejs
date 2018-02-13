@@ -1,7 +1,7 @@
 <% include header %>
 <br><br><br>
 <div class="container">
-      <h2>Resumo</h2>
+      <h2>RESUMO</h2>
       <br>
       <p>Filtrar por: 
         <a href="/operacoes">Todos</a> |
@@ -25,8 +25,8 @@
               <tr>
                 <td>#</td>
                 <td><%=operacao.descricao %></td>
-                <td>R$ <%=operacao.valor %></td>
-                <td>Saldo: R$ <%= operacao.sub %></td>
+                <td><%=(operacao.valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></td>
+                <td>Saldo: <%= (operacao.sub).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></td>
                 <td><a href="/operacoes/delete/<%= operacao._id %>">Excluir</a></td>
                 <td><a href="/operacoes/edit/<%= operacao._id %>">Alterar</a></td>
               </tr>

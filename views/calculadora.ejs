@@ -2,7 +2,7 @@
 <br><br><br><br>
       <div class="container">
       <div class="jumbotron">
-      <h2>Cálculo de Juros</h2>
+      <h2>CÁLCULO DE JUROS</h2>
       <br>
       <hr>
       <form method="GET">
@@ -10,7 +10,7 @@
         Taxa a.m.: <input type="text" class="form-control" name="taxa"><br>
         Quantos meses: <input type="text" class="form-control" name="tempo"><br>
         <hr>
-        <button type="submit" class="btn btn-primary">Calcular</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
       </form>
       </div>
       </div>
@@ -21,11 +21,11 @@
        <div class="container">
        <ul class="list-group">
       <li class="list-group-item list-group-item-info">
-          <h2>Saldo Total</h2>
-         <h1> R$ <%= resultado.total.toFixed(2) %></h1>
+          <h2>Saldo Total ao Fim do Período</h2>
+         <h1> R$ <%= (resultado.total.toFixed(2)).toLocaleString('pt-BR') %></h1>
          <hr>
 
-        <h3>Evolução</h3>
+        <h3>Evolução do Período</h3>
         <br>
         <table>
           <tr>
@@ -35,7 +35,7 @@
 <% resultado.evolucao.forEach((valor) => { %>
           <tr>
           <td><%= valor.mes %></td>
-          <td>R$ <%= valor.juros.toFixed(2) %></td>
+          <td>R$ <%= (valor.juros.toFixed(2)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></td>
           </tr>
           <% }) %>
         </table>

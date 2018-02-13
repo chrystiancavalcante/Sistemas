@@ -6,7 +6,8 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 
 const MongoClient = require('mongodb').MongoClient
-const mongoUri =                                                                                                                                                  'mongodb://br3wchrystian:RhklGvvpB9jrWMEs@cluster0-shard-00-00-ivpt9.mongodb.net:27017,cluster0-shard-00-01-ivpt9.mongodb.net:27017,cluster0-shard-00-02-ivpt9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin'
+const mongoUri = 'mongodb://br3wchrystian:RhklGvvpB9jrWMEs@cluster0-shard-00-00-ivpt9.mongodb.net:27017,cluster0-shard-00-01-ivpt9.mongodb.net:27017,cluster0-shard-00-02-ivpt9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin' 
+                                                                                                                                                 
 
 app.use(express.static('public'))
 
@@ -154,18 +155,17 @@ app.get('/operacoes', async (req, res) => {
   let conditions = {}
   if(req.query.tipo && req.query.tipo === 'entradas'){
     conditions = {
-      valor: { $gte: 0 } // greater then equal
+      valor: { $gte: 0 } // greater then equal(maior ou igual)
     }
   }else if(req.query.tipo && req.query.tipo === 'saidas'){
     conditions = {
-      valor: { $lt: 0 } // less then
+      valor: { $lt: 0 } // less than(menor que)
     }
   }
   const operacoes = await find(app.db, 'operacoes', conditions)
   const newOperacoes = subtotal(operacoes)
   res.render('operacoes', { operacoes: newOperacoes })
 })
-
 
 
 // mostrar formulario

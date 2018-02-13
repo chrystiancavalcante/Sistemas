@@ -1,10 +1,11 @@
 <% include header %>
 <br><br><br><br>
       <div class="container">
+     <h2>CÁLCULO DE JUROS</h2>
+     <hr>
       <div class="jumbotron">
-      <h2>CÁLCULO DE JUROS</h2>
       <br>
-      <hr>
+      <% if(!resultado.calculado){ %>
       <form method="GET">
         Valor inicial: <input type="text" class="form-control" name="valorInicial"><br>
         Taxa a.m.: <input type="text" class="form-control" name="taxa"><br>
@@ -13,11 +14,9 @@
         <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
       </form>
       </div>
+      <% } %>
       </div>
-      <br>
-
-      <% if(resultado.calculado){ %>
-      
+     <% if(resultado.calculado){ %>
        <div class="container">
        <ul class="list-group">
       <li class="list-group-item list-group-item-info">
@@ -32,7 +31,7 @@
           <th>Mês</th>
           <th>Valor</th>
           </tr>
-<% resultado.evolucao.forEach((valor) => { %>
+         <% resultado.evolucao.forEach((valor) => { %>
           <tr>
           <td><%= valor.mes %></td>
           <td>R$ <%= (valor.juros.toFixed(2)).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) %></td>

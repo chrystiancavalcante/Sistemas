@@ -1,13 +1,13 @@
 {
-  "name": "meu-dinheiro",
+  "name": "softwarepro-finance",
   "version": "1.0.0",
-  "description": "Projeto criado no Fullstack Academy",
+  "description": "Projeto desenvolvido por Chrystian Cavalcante",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tulio Faria",
+  "author": "Chrystian Cavalcante",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",

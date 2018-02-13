@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 
 const MongoClient = require('mongodb').MongoClient
-const mongoUri = 'mongodb://br3wchrystian:RhklGvvpB9jrWMEs@cluster0-shard-00-00-ivpt9.mongodb.net:27017,cluster0-shard-00-01-ivpt9.mongodb.net:27017,cluster0-shard-00-02-ivpt9.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin' 
+const mongoUri = 'mongodb://heroku_g46jqsqb:39n15089ajjs2860s6i3idqeq0@ds115436.mlab.com:15436/heroku_g46jqsqb' 
                                                                                                                                                  
 
 app.use(express.static('public'))

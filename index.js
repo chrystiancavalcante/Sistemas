@@ -166,7 +166,6 @@ app.get('/operacoes', async (req, res) => {
   res.render('operacoes', { operacoes: newOperacoes })
 })
 
-
 // mostrar formulario
 app.get('/nova-operacao', (req, res) => res.render('nova-operacao'))
 app.post('/nova-operacao', async (req, res) => {
@@ -174,7 +173,8 @@ app.post('/nova-operacao', async (req, res) => {
     descricao: req.body.descricao,
     valor: parseFloat(req.body.valor)
   }
-  const newOperacao = await insert(app.db, 'operacoes', operacao)
+  
+   const newOperacao = await insert(app.db, 'operacoes', operacao)
   res.redirect('/operacoes')
 })
 

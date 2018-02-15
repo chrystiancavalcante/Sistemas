@@ -1,4 +1,5 @@
 const express = require('express')
+const favicon = require('serve-favicon')
 const app = express()
 
 const bodyParser = require('body-parser')
@@ -13,6 +14,7 @@ app.use(express.static('public'))
 const path = require('path')
 
 // onde estão os templates
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.set('views', path.join(__dirname, 'views'))
 // tipo de template
 app.set('view engine', 'ejs')
